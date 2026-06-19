@@ -8,7 +8,7 @@ This component utilizes internal FreeRTOS system metrics to track CPU load and t
    ```bash
    idf.py menuconfig
 
-```
+   ```
 
 2. Navigate to the core FreeRTOS scheduler properties:
 `Component config` ➔ `FreeRTOS` ➔ `Kernel`
@@ -21,9 +21,6 @@ This component utilizes internal FreeRTOS system metrics to track CPU load and t
 * **System State Tracking functions** (Select the option based on your active ESP-IDF version toolchain):
 * **For ESP-IDF v4.4:** Scroll to the bottom of the kernel menu list and check `[*] Enable FreeRTOS trace facility functions`
 * **For ESP-IDF v5.x:** Locate and check `[*] Enable task snapshot functions`
-
-
-
 
 4. Save your updated environment layout map by pressing `S`, hit `Enter` to confirm the filename path target, and press `Q` to exit.
 
